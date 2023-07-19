@@ -506,12 +506,11 @@ nav li a{
     color:#FF42A5;
     border: none;
 }
-.pink-img {
+.pink-img img {
     width: 1013px;
     height: 821px;
-    position: relative;
-
-    
+    position: absolute;
+    right:200px;
 }
 
 
