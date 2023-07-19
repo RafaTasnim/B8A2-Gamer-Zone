@@ -684,7 +684,7 @@ footer{
     }
     .banner-right-content{
         margin-top: 200px;
-        margin-left: 100px;
+        margin-left: 200px;
 
     }
     
@@ -750,6 +750,15 @@ footer{
     .play-section  {
         flex-direction:column;
 
+    }
+    .play-title{
+        margin-left: 200px;
+        width:400px;
+        text-align: center;
+    }
+    .play-container p{
+        margin-left: 200px;
+        text-align: center;
     }
   
     .pink-section{
