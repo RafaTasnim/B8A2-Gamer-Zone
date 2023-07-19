@@ -183,7 +183,7 @@ nav li a{
 }
 .banner-right-content{
     margin-top:20px;
-    margin-right: 200px;
+    margin-right: 240px;
 
     object-fit: fill;
 }
@@ -198,7 +198,7 @@ nav li a{
 
 .gamer-left-content{
     justify-content: flex-end;
-    margin-left: 150px;
+    margin-right: 240px;
     
 }
 .gamer-img{
@@ -286,8 +286,7 @@ nav li a{
 }
 .funny-container{
     display: flex;
-    margin-left: 100px;
-
+    margin-right: 240px;
 }
 .funny-content {
     position: relative;
@@ -365,8 +364,6 @@ nav li a{
 
 
 
-
-
 .play-section{
     display: flex;
     margin-top: 120px;
@@ -411,7 +408,7 @@ nav li a{
     display: flex;
     margin-left: 238px;
     margin-top: -120px;
-    margin-bottom: 240px;
+    margin-bottom: 120px;
 }
 .last-img{
     width: 710px;
@@ -513,7 +510,7 @@ nav li a{
     width: 1013px;
     height: 821px;
     position: relative;
-    left:400px;
+    left:250px;
     
 }
 
