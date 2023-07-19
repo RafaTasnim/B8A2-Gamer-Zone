@@ -9,16 +9,15 @@ body{
     width: 100%;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    background: #FFFFFF;
-    width: 1920px;
-    height: 130px;
-    flex-shrink: 0;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    
+nav {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  height: 130px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
+
 .nav-logo {
     width: 86.041px;
     height: 40px;
@@ -84,6 +83,7 @@ nav li a{
     display: flex;
     margin: 0;
     padding: 0;
+    
 }
 .banner-container{
     padding:148px 309px 148px 240px;
@@ -476,6 +476,8 @@ nav li a{
     position: relative;
     margin-right: 40px;
     background-color: #FFFFFF; 
+    border: 2px solid transparent;
+    cursor: pointer;
     
 }
 .game-img1{
@@ -494,7 +496,8 @@ nav li a{
     position: relative;
     margin-right: 40px;
     background-color: #FFFFFF; 
-    
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 .game-img img, .game-img1 img{
     position: relative;
@@ -505,14 +508,66 @@ nav li a{
     position: relative;
     bottom:20px;
     margin-left: 10px;
+
 }
+.game-img1:hover, .game-img:hover{
+    border-color: #FF42A5;
+} 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0B0223;
+
     
 
 
-
-footer{
-    width: 1920px;
-    height: 636px;
-    flex-shrink: 0;
-    background: #0B0223;
+}
+.footer-title{
+    color:#FFF;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right:100px;
+}
+.footer-title .nav-title{
+    position: relative;
+}
+.footer-content{
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+.footer-content>ul{
+    display: flex;
+    list-style: none;
+    gap:60px;
+}
+.footer-logo-img{
+    cursor: pointer;
+    margin-left:40px;
+    
+}
+.footer-description{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 120px;
+    
+}
+.footer-description>ul{
+    list-style: none;
+    display: flex;
+    gap:60px;
 }
