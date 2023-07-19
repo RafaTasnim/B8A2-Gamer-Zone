@@ -529,6 +529,7 @@ nav li a{
     padding-left: 240px;
     padding-top: 120px;
     padding-right: 302px;
+
 }
 .g2{
 
@@ -651,19 +652,64 @@ footer{
 }
 
 
-@media screen and (max-width:576px){
-    body{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+@media screen and (max-width:768px){
+  
     nav{
         flex-direction: column;
         background:#ffffff00;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         box-shadow: none;
         
+    }
+    .nav-main{
+        text-align: center;
+        position: absolute;
+        left:100px;
+        
+    }
+    .nav>ul{
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 200%;
+        margin-top: 55%;
+        position: relative;
+    }
+    .banner-right-content{
+        margin-top: 200px;
+        margin-left: 100px;
+
+    }
+    
+    .banner-left-content{
+        width:500px;
+        height: max-content;
+        margin-left: 250px;
+    }
+    .banner-container{
+        width:500px;
+        margin: 120;
+        padding: 0;
+    }
+   
+    .gamer-left-content{
+        flex-direction: column;
+       position: relative;
+       left:300px;
+       width:100%;
+       top:1000px;
+    }
+    .funny-title{
+        width:400px;
+        position: relative;
+        top:500px;
+        margin-bottom: 100px;
+    }
+    .funny-description{
+        width:500px;
+        position: relative;
+        top:500px;
     }
     .banner, .gamer-section,.last-section{
         flex-direction:column-reverse;
@@ -671,21 +717,95 @@ footer{
     }
     .play-section  {
         flex-direction:column;
+
     }
+  
     .pink-section{
         flex-direction: column;
-        height: 100%;
+        height:1400px;
+        width: 1120px;
+    }
+    .pink-title{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left:300px;
+    }
+    .pink-container{
+        
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 0px;
+        width:300px;
+        text-align: center;
+
+    }
+    .pink-description{
+        width:500px;
+        position: relative;
+        left: 200px;
+    }
+    .pnik-content{
+        width: 500px;
+        position: relative;
+        left: 200px;
+    }
+    .pink-img img{
+        margin: 0;
+        padding: 0;
+        object-fit: contain;
+        width:500px;
+        position: relative;
+        right: 0;
+        left: 200px;
+        bottom:200px;
+    }
+    .pink-btn{
+        margin-left: 200px;
+        margin-bottom: 0;
+        position: relative;
+        left:200px;
     }
     
     .funny-container{
         display: grid;
         grid-template-columns: 1fr;  
         justify-content: center;
+        margin-top:500px;
+        margin-left: 200px;
      
+    }
+    .game-type {
+        
+        height: 100%;
+        width: 1120px;
+    }
+
+
+    .g1{
+        flex-direction:column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+    .g2
+    {
+        flex-direction:column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        padding-left: 0;
+    }
+
+    footer{
+        width: 1120px;
     }
     .footer-container{
         padding-left: 100px;
-        width:300px;
+        
         align-items: center;
         justify-content: center;
         margin-right: 40px;
