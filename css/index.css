@@ -7,7 +7,7 @@
 body{
     margin:0;
     padding: 0;
-    width: 100%;
+   
 }
 
 nav{
@@ -380,10 +380,10 @@ nav li a{
     margin-top: 120px;
 }
 .play-container{
-    margin-left: 439px;
+    margin-left: 120px;
     margin-top: 200px;
     width: 353px;
-    margin-right: 120px;
+    margin-right: 240px;
 }
 .play-title{
     text-align: right;
