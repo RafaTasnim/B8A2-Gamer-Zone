@@ -184,7 +184,7 @@ nav li a{
 .banner-right-content{
     margin-top:20px;
     margin-right: 200px;
-    margin-left: 200px;
+
     object-fit: fill;
 }
 
@@ -517,13 +517,11 @@ nav li a{
     color:#FF42A5;
     border: none;
 }
-.pink-img{
+.pink-imgm {
     width: 1013px;
     height: 821px;
-    margin-right: 100px;
-    
-   
-    
+    position: relative;
+    right:2320px;
 }
 
 
