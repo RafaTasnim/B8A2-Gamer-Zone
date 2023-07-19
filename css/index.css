@@ -3,26 +3,35 @@
     font-family: 'Work Sans', sans-serif;
 
 }
+
 body{
     margin:0;
     padding: 0;
     width: 100%;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  background: #FFFFFF;
-  height: 130px;
-  flex-shrink: 0;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+nav{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: space-between;
+    height: 130px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    
 }
-
+.nav-main{
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 96px;
+    margin-left: 240px;
+    
+}
 .nav-logo {
     width: 86.041px;
     height: 40px;
     flex-shrink: 0;
-    margin-left: 240px;
+    
 }
 .nav-title{
     text-align: center;
@@ -31,6 +40,8 @@ nav {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
+    bottom:55px;
 }
 .nav-title span{
     color:#FF42A5;
@@ -38,17 +49,13 @@ nav {
 nav>ul{
     display: flex;
     margin-top: 96px;
-    /* margin-right: 680px; */
     text-decoration: none;
     list-style: none;
     justify-content: center;
-    /* float: right; */
     position: relative;
-    left: 680px;
     align-items: center;
-    margin-right:240px;
+    margin-right: 240px;
     bottom:38px;
-
 }
 nav li a{
     
@@ -61,8 +68,7 @@ nav li a{
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
-  
-    
+     
 }
 .follow-us{
     display: flex;
@@ -79,21 +85,24 @@ nav li a{
     flex-shrink: 0;
     margin:16px;
 }
+
+
+
+
+
+
 .banner{
     display: flex;
-    margin: 0;
-    padding: 0;
-    
 }
 .banner-container{
     padding:148px 309px 148px 240px;
 }
 .banner-left-content{
     background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
     width: 901px;
     height: 700px;
     flex-shrink: 0;
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     justify-items: center;
     
 }
@@ -143,48 +152,43 @@ nav li a{
     left:3px;
     position: relative;
 }
-.btn-primary{
+.nav-btn{
+    position: relative;
+    bottom:80px;
+}
+.btn-primary,.btn-primary1{
     display: inline-flex;
     padding: 21px 40px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border:none;
+    position: relative;
+
+}
+.btn-primary{
     background:  #FF42A5;
     color: #FFF;
-    font-family: Work Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    border:none;
-    position: relative;
-    bottom:100px;
 }
 .btn-primary1{
-    display: inline-flex;
-    padding: 21px 40px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 48px;
+    
     background: #4EC5F7;
     color: #FFF;
-    font-family: Work Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    border:none;
-    position: relative;
-    bottom:100px;
 }
 .banner-right-content{
-    margin-top:19px;
-    margin-right: 240px;
+    margin-top:20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    object-fit: fill;
 }
+
 .gamer-section{
-    width: 100%;
     height: 600px;
     flex-shrink: 0;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -194,6 +198,7 @@ nav li a{
 
 .gamer-left-content{
     justify-content: flex-end;
+    margin-left: 150px;
     
 }
 .gamer-img{
@@ -241,8 +246,7 @@ nav li a{
     text-transform: uppercase;
     border:none;
     position: relative;
-    left:320px;
-    
+    left:320px;   
 }
 .gamer-description{
     color: #534C64;
@@ -256,6 +260,12 @@ nav li a{
 
 
 
+.funny-video-section{
+    margin-left: 240px;
+    margin-right: 240px;
+    justify-content: center;
+    align-items: center;
+}
 .funny-title{
     color: #0B0223;
     text-align:center;
@@ -276,15 +286,14 @@ nav li a{
 }
 .funny-container{
     display: flex;
-    margin-left:240px ;
-    margin-right:240px ;
+    margin-left: 100px;
+
 }
-.funny-content img{
-    margin-right: 24px;
-    width: 342px;
-    height: 400px;
-    flex-shrink: 0;
-}
+.funny-content {
+    position: relative;
+    display: inline-block;
+  }
+  
 .funny-content a{
     color: #534C64;
     font-family: Work Sans;
@@ -295,7 +304,75 @@ nav li a{
     text-decoration: none;
     width: 342px;
     display: block;
+    position: relative;
+    left:30px;
 }
+
+.overlay {
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+}
+  
+.funny-img {
+    width: 342px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+.watch-now{
+    margin-top:40px; 
+    color:#FF42A5;
+}
+.play-icon,.watch-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap:10px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.funny-img:hover{
+
+    cursor: pointer;
+    border-radius: 20px;
+   
+
+}
+
+.overlay:hover .play-icon{
+    background-color: #000000b4;
+    
+    padding-left:148px;
+    padding: 170px 146px;
+    border-radius: 20px;
+    border:#FF42A5 solid 5px;
+    
+
+}
+.overlay:hover .play-icon,
+.overlay:hover .watch-now {
+  display: block;
+  cursor: pointer;
+  color:#FF42A5;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 1;
+ 
+}
+.watch-now {
+    
+    color: pink;
+    font-size: 20px;
+}
+
+
+
 
 
 .play-section{
@@ -306,6 +383,7 @@ nav li a{
     margin-left: 439px;
     margin-top: 200px;
     width: 353px;
+    margin-right: 120px;
 }
 .play-title{
     text-align: right;
@@ -320,8 +398,9 @@ nav li a{
     
     width: 353px;
 }
+
 .play-img{
-    width: 634.833px;
+    max-width: 634.833px;
     height: 650px;
     flex-shrink: 0;
     margin-right: 240px;
@@ -352,8 +431,8 @@ nav li a{
     height: 365px;
     flex-shrink: 0;
     position: relative;
-    top:120px;
-    right: 190px;
+    top:10%;
+    right: 19%;
 }
 
 .last-container{
@@ -361,6 +440,7 @@ nav li a{
     width:483px;
     margin-top: 200px;
     margin-right: 240px;
+    margin-left: 100px;
 }
 .last-title{
     color: #0B0223;
@@ -373,16 +453,17 @@ nav li a{
 
 
 .pink-section{
-    width: 1920px;
     height: 821px;
     flex-shrink: 0;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     display: flex;
 }
 .pink-container{
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 120px;
-    margin-left: 240px;
+    position: relative;
+    left: 260px;
+ 
 }
 .pink-title{
     color: #FFF;
@@ -436,14 +517,22 @@ nav li a{
     color:#FF42A5;
     border: none;
 }
+.pink-img{
+    width: 1013px;
+    height: 821px;
+    object-fit: contain;
+    margin-right: 0;
+    margin-left: 420px;
+}
 
 
 .game-type{
-    width: 1920px;
+    
     height: 427px;
     flex-shrink: 0;
     background: linear-gradient(90deg, rgba(255, 66, 164, 0.123) 0%, rgba(255, 66, 165, 0.03) 100%);
     flex-wrap: wrap;
+    justify-content: space-between;
   
 }
 
@@ -514,14 +603,14 @@ nav li a{
     border-color: #FF42A5;
 } 
 footer{
+    background: #0B0223;
+}
+.footer-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #0B0223;
-
     
-
 
 }
 .footer-title{
@@ -530,10 +619,11 @@ footer{
     display: flex;
     align-items: center;
     position: relative;
-    right:100px;
+    
 }
 .footer-title .nav-title{
     position: relative;
+    top:0px;
 }
 .footer-content{
     color: #FFF;
@@ -570,4 +660,59 @@ footer{
     list-style: none;
     display: flex;
     gap:60px;
+}
+
+
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+        background:#ffffff00;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        
+    }
+    .banner, .gamer-section,.last-section{
+        flex-direction:column-reverse;
+       
+    }
+    .play-section  {
+        flex-direction:column;
+    }
+    .pink-section{
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .funny-container{
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-content: center;
+     
+    }
+
+
+    .footer-container{
+        padding-left: 100px;
+        width:300px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    .footer-content>ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-description>ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap:50px;
+        margin-top: 50px;
+    }
+    .footer-description p{
+        margin-top: 10px;
+    }
+    
+    
 }
