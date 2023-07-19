@@ -431,8 +431,8 @@ nav li a{
     height: 365px;
     flex-shrink: 0;
     position: relative;
-    top:10%;
-    right: 19%;
+    top:-260px;
+    right: -482px;
 }
 
 .last-container{
@@ -664,6 +664,10 @@ footer{
 
 
 @media screen and (max-width:576px){
+    body{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     nav{
         flex-direction: column;
         background:#ffffff00;
@@ -691,8 +695,6 @@ footer{
         justify-content: center;
      
     }
-
-
     .footer-container{
         padding-left: 100px;
         width:300px;
